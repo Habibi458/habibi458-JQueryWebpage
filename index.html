@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.css"> 
+
+
+
+
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script> 
+
+  <script>
+      $( function()
+      {
+          $("#accordion").accordion();
+      });
+  </script>
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#progressbar" ).progressbar({
+      value: false
+    });
+    $( "button" ).on( "click", function( event ) {
+      var target = $( event.target ),
+        progressbar = $( "#progressbar" ),
+        progressbarValue = progressbar.find( ".ui-progressbar-value" );
+ 
+      if ( target.is( "#numButton" ) ) {
+        progressbar.progressbar( "option", {
+          value: Math.floor( Math.random() * 100 )
+        });
+      } else if ( target.is( "#colorButton" ) ) {
+        progressbarValue.css({
+          "background": '#' + Math.floor( Math.random() * 16777215 ).toString( 16 )
+        });
+      } else if ( target.is( "#falseButton" ) ) {
+        progressbar.progressbar( "option", "value", false );
+      }
+    });
+  } );
+  </script>
+  <style>
+  #progressbar .ui-progressbar-value {
+    background-color: #ccc;
+  }
+  </style>
+
+
+
+
+
+
+<link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
+</script>
+
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#news">Home</a>
+        <a href="#contact">About</a>
+        <a href="#about">Calender</a>
+    </div>
+
+    <img src="city.jpg" width="1520px" height="600px">
+
+    <div id="accordion">
+        <h3>FAQ's</h3>
+        <div>
+          <p>
+          Q: What is the main religion in Istanbul, Turkey?<br>
+          A: Islam is the most common religion practiced consisting of 90% sunni muslims.<br><br>
+          Q: Why is Turkey so historic?<br>
+          A: Turkey is located at the crossroads between Europe and Asia. This has made it an important land throughout world history. The city of Troy, made famous in Greek literature, was located on the Turkish coastline thousands of years ago. The first major empire to form in the land was the Hittite empire. 
+
+
+          </p>
+        </div>
+        <h3>History</h3>
+        <div>
+          <p>
+            Modern Turkey was founded in 1923 from the Anatolian remnants of the defeated Ottoman Empire by national hero Mustafa Kemal, who was later honored with the title Ataturk, or "Father of the Turks."
+            Under his authoritarian leadership, the country adopted wide-ranging social, legal, and political reforms. After a period of one-party rule, an experiment with multi-party politics led to the 1950 election victory of the opposition Democratic Party and the peaceful transfer of power.
+          </p>
+        </div>
+        <h3>Hagia Sophia</h3>
+        <div>
+          <p>
+            The original church on the site of the Hagia Sophia is said to have been ordered to be built by Constantine I in 325 on the foundations of a pagan temple. His son, Constantius II, consecrated it in 360. It was damaged in 404 by a fire that erupted during a riot following the second banishment of St. John Chrysostom, then patriarch of Constantinople. It was rebuilt and enlarged by the Roman emperor Constans I. The restored building was rededicated in 415 by Theodosius II. The church was burned again in the Nika insurrection of January 532, a circumstance that gave Justinian I an opportunity to envision a splendid replacement.
+
+            The resultant Hagia Sophia was built in the remarkably short time of about six years, being completed in 537 CE. Unusual for the period in which it was built, the names of the building’s architects—Anthemius of Tralles and Isidorus of Miletus—are well known, as is their familiarity with mechanics and mathematics. The structure now standing is essentially the 6th-century edifice, although an earthquake caused a partial collapse of the dome in 558 (restored 562) and there were two further partial collapses, after which it was rebuilt to a smaller scale and the whole church reinforced from the outside. It was restored again in the mid-14th century. For more than a millennium it was the Cathedral of the Ecumenical Patriarchate of Constantinople. It was looted in 1204 by the Venetians and the Crusaders on the Fourth Crusade.
+          </p>
+        </div>
+        <h3>Camlica mosque</h3>
+        <div>
+          <p>
+            Visiting and praying at the Hagia Sophia Grand Mosque is highly valued by the Muslim faithful. But another mosque in Istanbul, the largest in Turkey, remains a magnet for the faithful and tourists as well.
+
+            A total of 12 million people visited Grand Çamlıca Mosque since its inauguration two years ago.
+            
+            The mosque, capable of hosting 63,000 people, has become one of the symbols of the city with its Ottoman-Seljuk fusion architectural style. The mosque's construction began in 2013, on an eponymous hill on the city's Asian side.
+            
+            Four of the six minarets of the mosque stand 107.1 meters (352 feet) tall, an acknowledgment of the Seljuk Turks' victory in eastern Manzikert, now Malazgirt, in 1071 against the Byzantine army that opened Anatolia to Turkish settlement. Its 72-meter (236-foot) high central dome represents the 72 communities living in Turkey, while its diameter of 34 meters (112 feet) symbolizes Istanbul's official license plate number.
+          </p>
+        </div>
+      </div>
+      </div>
+
+
+      <div id="progressbar"></div>
+      <button id="numButton">Random Value - Determinate</button>
+      <button id="falseButton">Indeterminate</button>
+      <button id="colorButton">Random Color</button>
+
+      <p>Date: <input type="text" id="datepicker"></p>
+
+
+      <footer>
+        <p>Tourist Guide: Habib Doost</p>
+        <p>Phone number: 623-274-2632</p>
+        <p>Email: <a href="mailto:heg@example.com"></a> hdoost694@gmail.com</p>
+      </footer>
+
+
+</body>
+</html>
